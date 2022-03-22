@@ -32,6 +32,8 @@ public class Director {
     public String toString() {
         return "Director{" + "nombre=" + nombre + ", nacionalidad=" + nacionalidad + '}';
     }
-    
+    public void filmar(){
+        System.out.println("grabando el final de la pelicula");
+    }
     
 }

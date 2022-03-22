@@ -16,7 +16,7 @@ public class TareaComposicion2209 {
         miPeli.setDuracion(140);
         miPeli.setEstelar(new Actor("Will Smith", 38));
         miPeli.setDirector(new Director("Francis Lawrence", "Australiano"));
-        miPeli.setProductora(new Productora("Warner Bros", "Warner"));
+        miPeli.setProductora(new Productora("Warner Bros", "Warner Bros. Entertainment, Inc."));
         System.out.println(miPeli);
         System.out.println();
         System.out.println("-------------------------------------------------");

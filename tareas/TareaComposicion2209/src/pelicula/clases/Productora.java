@@ -32,5 +32,7 @@ public class Productora {
     public String toString() {
         return "Productora{" + "nombre=" + nombre + ", marca=" + marca + '}';
     }
-    
+    public void Actividad(){
+        System.out.println("Se encuentra trabajando desde 1923");
+    }
 }

@@ -69,7 +69,9 @@ public class Pelicula {
 
     @Override
     public String toString() {
-        return "Pelicula{" + "nombre=" + nombre + ", duracion=" + duracion + ", Estelar=" + Estelar + ", productora=" + productora + ", director=" + director + '}';
+        return "Pelicula{" + "nombre= " + nombre + ", duración en min= " +  duracion + ", " +  Estelar + ", " + productora + ", " + director + '}';
     }
-
+    public void tiempo(){
+        System.out.println("Han pasado 86 min");
+    }
 }

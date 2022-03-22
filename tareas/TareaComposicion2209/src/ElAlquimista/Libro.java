@@ -54,7 +54,7 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro{" + "nombre=" + nombre + ", edicion=" + edicion + ", autor=" + autor + ", editorial=" + editorial + '}';
+        return "Libro{" + "nombre=" + nombre + ", edicion=" + edicion + ", " + autor + ", " + editorial + '}';
     }
     public void cambiarPagina(){
         System.out.println("Cambiando a la siguiente pagina");
