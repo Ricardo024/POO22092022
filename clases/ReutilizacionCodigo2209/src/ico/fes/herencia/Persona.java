@@ -42,6 +42,6 @@ public class Persona {
    }
     
     public void dormir() {
-        System.out.println(this.Nombre + "esta durmiendo...");
+        System.out.println(this.Nombre + " está durmiendo...");
 }
 }
