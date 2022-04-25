@@ -149,7 +149,6 @@ public class JavaBasico2209 {
          for (Alumno alumno : lista) {
              System.out.println(alumno.evaluarDesempenio());
         }
-         
         }
     }
     
