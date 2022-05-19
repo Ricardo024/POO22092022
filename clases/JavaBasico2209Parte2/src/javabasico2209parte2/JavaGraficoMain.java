@@ -1,7 +1,7 @@
 package javabasico2209parte2;
 
-//import ico.fes.awt.Ventana;
-//import ico.fes.awt.VentanaV2;
+import ico.fes.awt.Ventana;
+import ico.fes.awt.VentanaV2;
 import ico.fes.swing.VentanaSwing;
 
 public class JavaGraficoMain {

@@ -31,10 +31,10 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", edad=" + edad + '}';
+        return  nombre + ", " + edad ;
     }
     
     public void comer(){
-        System.out.println(this.nombre + " esrta comiendo...");
+        System.out.println(this.nombre + " esta comiendo...");
     }
 }
