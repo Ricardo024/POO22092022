@@ -1,9 +1,13 @@
 package ico.fes.modelo;
 
+import ico.fes.db.PersonaDAO;
 import ico.fes.herencia.Persona;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ComboBoxModel;
 import javax.swing.event.ListDataListener;
+import org.sqlite.SQLiteException;
 
 
 public class ModeloPersonaCombo implements ComboBoxModel<Persona> {
@@ -56,14 +60,32 @@ public class ModeloPersonaCombo implements ComboBoxModel<Persona> {
     }
     
     public void consultarBaseDatos(){
-        //simular una consulta de base de datos
-        datos = new ArrayList<Persona>();
-        // se conecta a pase de datos 
-        //se consulra 
-        datos.add(new Persona("Jose", 19));
-        datos.add(new Persona("Maria", 21));
-        datos.add(new Persona("Jesus", 33));
-        datos.add(new Persona("Diana", 22));
+        PersonaDAO pdao = new PersonaDAO();
+        
+        try {
+            //simular una consulta de base de datos
+            datos = pdao.obtenerTodo();
+            // se conecta a base de datos
+            // se consulta
+//        datos.add(new Persona("Jose", 19));
+//        datos.add(new Persona("Maria", 21));
+//        datos.add(new Persona("Jesus", 33));
+//        datos.add(new Persona("Diana", 22));
+        } catch (SQLiteException ex) {
+            ex.printStackTrace();
+        }
+    }
+    
+    public void agregarPersona (Persona p){
+        //Insert BD
+        PersonaDAO pdao = new PersonaDAO();
+        datos.add(p);
+        
+        try {
+            pdao.insertar(p);
+        } catch (SQLiteException ex) {
+            ex.printStackTrace();
+        }
     }
     
 }
